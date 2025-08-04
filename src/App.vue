@@ -1,24 +1,30 @@
 <template>
-  <div class="demo">
-    <Editablecell/>
+  <div class="app">
+    <EquipmentList/>
   </div>
-
 </template>
 
 <script>
-import Editablecell from './view/editablecell.vue'
+import EquipmentList from './components/EquipmentList.vue'
 
 export default {
   name: 'app',
   components: {
-    Editablecell
+    EquipmentList
   }
 }
 </script>
 
 <style>
-  .demo {
-    padding: 24px;
-  }
+.app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: auto;
+}
 
+* {
+  box-sizing: border-box;
+}
 </style>
